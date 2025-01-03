@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: white;
+    color: black;
+    margin: 20px;
+  }
+
+@media (prefers-color-scheme: dark) { 
+
+    body {
+        background-color: black;
+        color: white;
+
+    }
+
+
+ }
+
+
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    text-wrap: balance;
+  }
+  
+  p {
+    font-size: 1.75rem;
+    text-align: center;
+  } 
+  
+  p.petit {
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #install {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+    p.petit {
+      font-size: 0.65rem;
+    }
+
+}
